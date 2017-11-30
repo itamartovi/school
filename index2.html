@@ -1,0 +1,56 @@
+<html>
+   <head>
+       <script>
+        
+         
+           var schools=[
+               { name:'ort holon',
+                students: [
+                { firstname:'dani', lastname:'dayan', average:60 },
+                { firstname:'yosi', lastname:'cohen', average:96 },
+                { firstname:'eli', lastname:'mizrahi', average:80 }
+             ] } ,{
+               name:'ort bat yam',
+               students: [
+                { firstname:'yosi', lastname:'dayan', average:60 },
+                { firstname:'dani', lastname:'cohen', average:96 },
+                { firstname:'eliyahu', lastname:'mizrahi', average:80 }
+             ]}
+             ];
+           
+            for(var i=0 ; i < schools.length; i++)
+                { alert(schools[i].name);
+
+                    for(var j=0; j < schools[i].students.length; j++)
+                  {
+                       var massage = schools[i].students[j].firstname + ' ' +                                       schools[i].students[j].lastname;
+                                     massage +='has an avarage of ' +
+                                     schools[i].students[j].average;
+
+                        if(schools[i].students[j].average>=95){
+                            massage +=' good';}
+                         else if(schools[i].students[j].average>=80){
+                            massage +=' so so...';
+                         } else {
+                            massage +=' you suck!';
+                        }
+                        alert(massage);
+                    }
+                 }
+       </script>
+       
+   </head>
+   
+   <body>
+      <h1>hello world</h1>
+       
+       
+   </body>
+    
+    
+    
+    
+    
+    
+    
+</html>
